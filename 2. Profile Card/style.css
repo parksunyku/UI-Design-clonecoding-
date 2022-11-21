@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(180deg, #c33764, #1d2671);
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  width: 400px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #141e30;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+
+.image {
+  width: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
+  box-shadow: 0px 0px 20px #c33764;
+}
+
+.name {
+  font-weight: 70;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.city {
+  font-size: 15px;
+  opacity: 0.8;
+  margin: 5px;
+}
+
+.bio {
+  text-align: center;
+  margin: 5px 25px;
+}
+
+.buttons {
+  margin-top: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.message,
+.follow {
+  border: none;
+  width: 35%;
+  height: 40px;
+  padding: 10px;
+  margin: 20px;
+  margin: auto;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.message {
+  background-color: #c33764;
+  border: 3px solid #c33764;
+  color: white;
+}
+
+.follow {
+  background-color: #c33764;
+  border: 3px solid #c33764;
+  color: white;
+}
+
+.message:hover {
+  background-color: #1d2671;
+  border: none;
+  cursor: pointer;
+}
+
+.follow:hover {
+  background-color: #1d2671;
+  border: none;
+  cursor: pointer;
+}
+
+.links {
+  background-color: #c33764;
+  width: 100%;
+  height: 75px;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link {
+  color: #1d2671;
+  margin: 0px 10px;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+
+.link:hover {
+  color: white;
+}
