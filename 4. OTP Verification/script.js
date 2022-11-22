@@ -1,12 +1,12 @@
-const inputs = document.querySelectorAll('.opt-card-inputs');
-const button = document.querySelector('.opt-card button');
+const inputs = document.querySelectorAll('.otp-card-inputs input');
+const button = document.querySelector('.otp-card button');
 
-inputs.forEach((e) => {
+inputs.forEach((input) => {
   let lastInputStatus = 0;
-  inputs.onkeyup = (e) => {
+  input.onkeyup = (e) => {
     const currentElement = e.target;
     const nextElement = input.nextElementSibling;
-    const prevElement = input.preveiousElementSibling;
+    const prevElement = input.previousElementSibling;
 
     if (prevElement && e.keyCode === 8) {
       if (lastInputStatus === 1) {
